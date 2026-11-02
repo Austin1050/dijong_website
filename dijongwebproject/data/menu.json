@@ -1,0 +1,31 @@
+[
+  { "id": "chicken-feet", "category": "CHICKEN", "name": "Chicken Feet", "price": 55.00, "img": "_images/maotwana.jpg" },
+  { "id": "chicken-gizzards", "category": "CHICKEN", "name": "Chicken Gizzards", "price": 39.99, "img": "_images/gizzards.jpg" },
+  { "id": "hardbody-chicken", "category": "CHICKEN", "name": "Hardbody Chicken", "price": 99.99, "img": "_images/hardbody.jpg" },
+  { "id": "chicken-stew", "category": "CHICKEN", "name": "Chicken Stew", "price": 85.00, "img": "_images/chickenstew.jpg" },
+
+  { "id": "beef-stew", "category": "BEEF", "name": "Beef Stew", "price": 74.99, "img": "_images/Easy Homemade Beef Stew.jpg" },
+  { "id": "grilled-steak", "category": "BEEF", "name": "Grilled Steak", "price": 94.99, "img": "_images/Tastye Recipes.jpg" },
+  { "id": "head-skopo", "category": "BEEF", "name": "Head (Skopo)", "price": 57.99, "img": "_images/cowhead.jpg" },
+  { "id": "cow-feet", "category": "BEEF", "name": "Cow Feet", "price": 57.99, "img": "_images/Jamaican Cow Foot Recipe.jpg" },
+
+  { "id": "pork-trotters", "category": "PORK", "name": "Pork Trotters", "price": 45.00, "img": "_images/Trotters.jpg" },
+  { "id": "full-pig-head", "category": "PORK", "name": "Full Pig Head", "price": 65.00, "img": "_images/Pighead.jpg" },
+  { "id": "honey-pork-ribs", "category": "PORK", "name": "Red Wine Braised Honey Pork Ribs", "price": 78.99, "img": "_images/Red Wine Braised Honey Pork Ribs.jpg" },
+  { "id": "pork-stew", "category": "PORK", "name": "Pork Stew", "price": 50.00, "img": "_images/Slow Cooker Pork Stew.jpg" },
+
+  { "id": "steamed-bread-beef-stew", "category": "FULL PLATES", "name": "Steamed Bread & Beef Stew", "price": 124.99, "img": "_images/steamedbread.jpg" },
+  { "id": "rice-chicken-5-sides", "category": "FULL PLATES", "name": "Rice & Chicken with 5 sides", "price": 99.99, "img": "_images/ricechicken.jpg" },
+  { "id": "rice-chicken-thigh-1-side", "category": "FULL PLATES", "name": "Rice & Chicken Thigh with 1 side", "price": 74.99, "img": "_images/chickenthigh.jpg" },
+  { "id": "pap-wors-3-sides", "category": "FULL PLATES", "name": "Pap with Braai Wors & 3 Sides", "price": 134.99, "img": "_images/papbraaimeat.jpg" },
+
+  { "id": "coleslaw", "category": "SIDES", "name": "Classic Creamy Coleslaw", "price": 34.99, "img": "_images/Classic Creamy Coleslaw.jpg" },
+  { "id": "mashed-potatoes", "category": "SIDES", "name": "Creamy Garlic Mashed Potatoes", "price": 29.99, "img": "_images/Creamy Garlic Mashed Potatoes.jpg" },
+  { "id": "tomato-salsa", "category": "SIDES", "name": "Tomato Salsa", "price": 24.99, "img": "_images/Fresh Tomato Salsa Recipe.jpg" },
+  { "id": "chakalaka", "category": "SIDES", "name": "Chakalaka", "price": 20.00, "img": "_images/22 Traditional African Recipes - Black Ragas.jpg" },
+
+  { "id": "platter-for-2", "category": "PLATTERS", "name": "Platter For 2", "price": 120.00, "img": "_images/Braaai.jpg" },
+  { "id": "family-values-platter", "category": "PLATTERS", "name": "Family Values Platter", "price": 519.99, "img": "_images/download (3).jpg" },
+  { "id": "platter-for-3", "category": "PLATTERS", "name": "Platter For 3", "price": 199.99, "img": "_images/download (2).jpg" },
+  { "id": "big-value-platter", "category": "PLATTERS", "name": "Big Value Platter", "price": 499.99, "img": "_images/bigvalueplatter.jpg" }
+]

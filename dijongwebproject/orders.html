@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIJONG-AFRICAN CUISINE | Orders</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="css_assets/style.css">
+    <!-- Favicon for browser tab -->
+    <link rel="icon" type="image/png" href="_images/linklogo.png">
+</head>
+
+<body>
+    <!-- Main Header Section -->
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <!-- Logo and Brand Name Area -->
+            <div class="logo-area">
+                <img src="_images/linklogo.png" alt="Dijong Logo" class="logo-img">
+                <span class="logo-text">DIJONG-AFRICAN CUISINE</span>
+            </div>
+
+            <!-- Navigation Menu Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+
+            <!-- Cart and Mobile Menu Buttons -->
+            <div class="nav-right">
+                <!-- Shopping Cart Button -->
+                <button class="cart-btn"> Cart <span id="cart-count">0</span>
+                </button>
+
+                <!-- Hamburger Menu Button for Mobile -->
+                <button class="hamburger" id="hamburger">
+                    <img src="_images/menu.svg" alt="Menu Icon">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- Orders Hero Section -->
+        <section class="hero" id="orders-hero">
+            <!-- Hero Text Content -->
+            <div class="hero-text">
+                <!-- Page Heading -->
+                <h1>PLACE YOUR<br><span>ORDER NOW.</span></h1>
+
+                <!-- Description -->
+                <p>We offer a wide range of different meals, we also provide deliveries anywhere around Gauteng and in-store pickups.</p>
+
+                <!-- Call-to-Action Button -->
+                <a href="#menu" class="btn-primary">EXPLORE MENU</a>
+            </div>
+
+            <!-- Hero Logo Image -->
+            <div class="hero-image">
+                <img src="_images/linklogo.png" alt="Dijong African Cuisine Logo">
+            </div>
+        </section>
+
+    <section class="products" id="menu">
+        <div class="section-header">
+        <h2>Menu</h2>
+
+    <div class="menu-controls">
+        <input id="menuSearch" type="search" placeholder="Search meals (e.g. stew, chicken, pap)">
+
+        <select id="menuCategory">
+        <option value="all">All categories</option>
+        </select>
+
+    <select id="menuSort">
+        <option value="default">Sort: Default</option>
+        <option value="price-asc">Price: Low - High</option>
+        <option value="price-desc">Price: High - Low</option>
+        <option value="name-asc">Name: A - Z</option>
+    </select>
+    </div>
+    </div>
+
+    <div class="product-grid" id="menuGrid"></div>
+</section>
+
+        <!-- CHICKEN MENU SECTION -->
+        <section class="products">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2>CHICKEN</h2>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+
+                <!-- Product Card 1: Chicken Feet -->
+                <div class="product-card">
+                    <img src="_images/maotwana.jpg" alt="Chicken Feet">
+                    <h3 class="category">Chicken Feet</h3>
+                    <p class="price">R 55.00</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 2: Chicken Gizzards -->
+                <div class="product-card">
+                    <img src="_images/gizzards.jpg" alt="Chicken Gizzards">
+                    <h3 class="category">Chicken Gizzards</h3>
+                    <p class="price">R 39.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 3: Hardbody Chicken -->
+                <div class="product-card">
+                    <img src="_images/hardbody.jpg" alt="Hardbody Chicken">
+                    <h3 class="category">Hardbody Chicken</h3>
+                    <p class="price">R 99.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 4: Chicken Stew -->
+                <div class="product-card">
+                    <img src="_images/chickenstew.jpg" alt="Chicken Stew">
+                    <h3 class="category">Chicken Stew</h3>
+                    <p class="price">R 85.00</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEEF MENU SECTION -->
+        <section class="products">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2>BEEF</h2>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+
+                <!-- Product Card 1: Beef Stew -->
+                <div class="product-card">
+                    <img src="_images/Easy Homemade Beef Stew.jpg" alt="Beef Stew">
+                    <h3 class="category">Beef Stew</h3>
+                    <p class="price">R 74.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 2: Grilled Steak -->
+                <div class="product-card">
+                    <img src="_images/Tastye Recipes.jpg" alt="Grilled Steak">
+                    <h3 class="category">Grilled Steak</h3>
+                    <p class="price">R 94.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 3: Head (Skopo) -->
+                <div class="product-card">
+                    <img src="_images/cowhead.jpg" alt="Cow Head (Skopo)">
+                    <h3 class="category">Head(Skopo)</h3>
+                    <p class="price">R 57.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 4: Cow Feet -->
+                <div class="product-card">
+                    <img src="_images/Jamaican Cow Foot Recipe.jpg" alt="Cow Feet">
+                    <h3 class="category">Cow Feet</h3>
+                    <p class="price">R 57.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORK MENU SECTION -->
+        <section class="products">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2>PORK</h2>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+
+                <!-- Product Card 1: Pork Trotters -->
+                <div class="product-card">
+                    <img src="_images/Trotters.jpg" alt="Pork Trotters">
+                    <h3 class="category">Pork Trotters</h3>
+                    <p class="price">R 45.00</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 2: Full Pig Head -->
+                <div class="product-card">
+                    <img src="_images/Pighead.jpg" alt="Full Pig Head">
+                    <h3 class="category">Full Pig Head</h3>
+                    <p class="price">R 65.00</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 3: Red Wine Braised Honey Pig Ribs -->
+                <div class="product-card">
+                    <img src="_images/Red Wine Braised Honey Pork Ribs.jpg" alt="Red Wine Braised Honey Pig Ribs">
+                    <h3 class="category">Red Wine Braised Honey Pig Ribs</h3>
+                    <p class="price">R 78.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 4: Pork Stew -->
+                <div class="product-card">
+                    <img src="_images/Slow Cooker Pork Stew.jpg" alt="Pork Stew">
+                    <h3 class="category">Pork Stew</h3>
+                    <p class="price">R 50.00</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FULL PLATES MENU SECTION -->
+        <section class="products">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2>Full Plates</h2>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+
+                <!-- Product Card 1: Steamed Bread & Beef Stew -->
+                <div class="product-card">
+                    <img src="_images/steamedbread.jpg" alt="Steamed Bread and Beef Stew">
+                    <h3 class="category">Steamed Bread &amp; Beef Stew</h3>
+                    <p class="price">R 124.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 2: Rice & Chicken with 5 sides -->
+                <div class="product-card">
+                    <img src="_images/ricechicken.jpg" alt="Rice and Chicken with 5 sides">
+                    <h3 class="category">Rice &amp; Chicken with 5 sides</h3>
+                    <p class="price">R 99.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 3: Rice & Chicken Thigh with 1 side -->
+                <div class="product-card">
+                    <img src="_images/chickenthigh.jpg" alt="Rice and Chicken Thigh with 1 side">
+                    <h3 class="category">Rice &amp; Chicken Thigh with 1 side</h3>
+                    <p class="price">R 74.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 4: Pap with Braai Wors & 3 Sides -->
+                <div class="product-card">
+                    <img src="_images/papbraaimeat.jpg" alt="Pap with Braai Wors and 3 Sides">
+                    <h3 class="category">Pap with Braai Wors &amp; 3 Sides</h3>
+                    <p class="price">R 134.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SIDES MENU SECTION -->
+        <section class="products">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2>SIDES</h2>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+
+                <!-- Product Card 1: Classic Creamy Coleslaw -->
+                <div class="product-card">
+                    <img src="_images/Classic Creamy Coleslaw.jpg" alt="Classic Creamy Coleslaw">
+                    <h3 class="category">Classic Creamy Coleslaw</h3>
+                    <p class="price">R 34.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 2: Creamy Garlic Mashed Potatoes -->
+                <div class="product-card">
+                    <img src="_images/Creamy Garlic Mashed Potatoes.jpg" alt="Creamy Garlic Mashed Potatoes">
+                    <h3 class="category">Creamy Garlic Mashed Potatoes</h3>
+                    <p class="price">R 29.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 3: Tomato Salsa -->
+                <div class="product-card">
+                    <img src="_images/Fresh Tomato Salsa Recipe.jpg" alt="Tomato Salsa">
+                    <h3 class="category">Tomato Salsa</h3>
+                    <p class="price">R 24.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 4: Chakalaka -->
+                <div class="product-card">
+                    <img src="_images/22 Traditional African Recipes - Black Ragas.jpg" alt="Chakalaka">
+                    <h3 class="category">Chakalaka</h3>
+                    <p class="price">R 20.00</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLATTERS MENU SECTION -->
+        <section class="products">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2>Platters</h2>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+
+                <!-- Product Card 1: Platter For 2 -->
+                <div class="product-card">
+                    <img src="_images/Braaai.jpg" alt="Platter For 2">
+                    <h3 class="category">Platter For 2</h3>
+                    <p class="price">R 120.00</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 2: Family Values Platter -->
+                <div class="product-card">
+                    <img src="_images/download (3).jpg" alt="Family Values Platter">
+                    <h3 class="category">Family Values Platter</h3>
+                    <p class="price">R 519.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 3: Platter For 3 -->
+                <div class="product-card">
+                    <img src="_images/download (2).jpg" alt="Platter For 3">
+                    <h3 class="category">Platter For 3</h3>
+                    <p class="price">R 199.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 4: Big Value Platter -->
+                <div class="product-card">
+                    <img src="_images/bigvalueplatter.jpg" alt="Big Value Platter">
+                    <h3 class="category">Big Value Platter</h3>
+                    <p class="price">R 499.99</p>
+                    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <!-- Footer Logo and Brand Name -->
+            <div class="footer-logo">
+                <img src="_images/linklogo.png" alt="Dijong Logo"> DIJONG
+            </div>
+
+            <!-- Copyright Notice -->
+            <p>&copy; 2026 DIJONG-AFRICAN CUISINE. All Rights Reserved.</p>
+
+            <!-- Social Media Links -->
+            <div class="socials">
+                <a href="#" aria-label="Instagram">𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦</a>
+                <a href="#" aria-label="TikTok">ꚠ 𝗧𝗶𝗸 𝗧𝗼𝗸</a>
+                <a href="#" aria-label="X (Twitter)">𝕏</a>
+                <a href="#" aria-label="Facebook">ⓕ Facebook</a>
+                <a href="#" aria-label="WhatsApp">𝑾𝒉𝒂𝒕𝒔𝑨pp</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js_assets/main.js" defer></script>
+
+</body>
+</html>

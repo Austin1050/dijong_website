@@ -1,0 +1,1045 @@
+/* ============================================
+   GLOBAL STYLES & RESET
+   ============================================ */
+
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #fafafa;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* ============================================
+   NAVIGATION BAR STYLES
+   ============================================ */
+
+/* Main Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    background: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo Area */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+
+/* Logo Image */
+.logo-img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: white;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* Navigation Right Section */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Cart Button */
+.cart-btn {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Cart Count Badge */
+#cart-count {
+    background: white;
+    color: black;
+    padding: 2px 7px;
+    border-radius: 50%;
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ============================================
+   HERO SECTION STYLES
+   ============================================ */
+
+/* Hero Section Container */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 6%;
+    background: white;
+    min-height: 80vh;
+}
+
+/* Hero Text Content */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 72px;
+    line-height: 0.9;
+    font-weight: 900;
+    letter-spacing: -3px;
+    margin-bottom: 20px;
+}
+
+/* Outlined Text Effect */
+.hero-text h1 span {
+    color: transparent;
+    -webkit-text-stroke: 2px #111;
+}
+
+.hero-text p {
+    max-width: 450px;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+/* Hero Image Section */
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 90%;
+    max-width: 500px;
+    transform: rotate(-12deg);
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+
+/* Primary Button */
+.btn-primary {
+    background: #111;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background: transparent;
+    color: #111;
+    padding: 14px 28px;
+    border: 2px solid #111;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+/* Button Hover Effects */
+.btn-primary:hover, 
+.btn-secondary:hover {
+    opacity: 0.8;
+}
+
+/* Add to Cart Button */
+.btn-add {
+    width: 100%;
+    background: #111;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-add:hover {
+    background: #333;
+}
+
+/* ============================================
+   PRODUCTS SECTION STYLES
+   ============================================ */
+
+/* Products Section Container */
+.products {
+    padding: 70px 6%;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+/* Product Grid Layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Individual Product Card */
+.product-card {
+    background: white;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Product Image */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Product Title */
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+/* Product Category */
+.category {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+/* Product Price */
+.price {
+    font-weight: 800;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* ============================================
+   ABOUT SECTION STYLES
+   ============================================ */
+
+/* About Section Container */
+.about {
+    background: #111;
+    color: white;
+    padding: 70px 6%;
+}
+
+/* About Content Layout */
+.about-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* About Text Content */
+.about-text {
+    flex: 2;
+    min-width: 280px;
+}
+
+.about-text h2 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.about-text li {
+    margin-bottom: 8px;
+}
+
+/* About Info Box */
+.about-box {
+    flex: 1;
+    min-width: 260px;
+    background: white;
+    color: black;
+    padding: 40px;
+    border-radius: 12px;
+    transform: rotate(2deg);
+}
+
+.about-box h3 {
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* ============================================
+   EVENT TYPES SECTION STYLES
+   ============================================ */
+
+/* Events Section Container */
+.events {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Events Content Wrapper */
+.events-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Section Heading */
+.events-content h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Decorative Underline for Heading */
+.events-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 2px;
+}
+
+/* Events List */
+.events-list {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+/* Individual Event List Items */
+.events-list li {
+    background: #ffffff;
+    padding: 20px 25px;
+    border-left: 4px solid #000000;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Checkmark Icon Before Each List Item */
+.events-list li::before {
+    content: '✓';
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-right: 12px;
+}
+
+/* Hover Effect for List Items */
+.events-list li:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+    border-left-color: #b8941f;
+}
+
+/* ============================================
+   ENQUIRY FORM SECTION STYLES
+   ============================================ */
+
+/* Enquiry Section Container */
+.enquiry-section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Enquiry Type Wrapper */
+.enquiry-type-wrapper {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.enquiry-type-wrapper p {
+    margin: 0;
+}
+
+.enquiry-type-wrapper label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Dropdown Select Styling */
+.enquiry-type-wrapper select {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+    padding-right: 45px;
+}
+
+.enquiry-type-wrapper select:hover {
+    border-color: #d4af37;
+    background-color: #fff;
+}
+
+.enquiry-type-wrapper select:focus {
+    border-color: #d4af37;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    margin-top: 40px;
+}
+
+/* ============================================
+   CONTACT FORM STYLES
+   ============================================ */
+
+/* Contact Form Container */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input Fields Styling */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="number"] {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+/* Textarea Styling */
+.contact-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    resize: vertical;
+    min-height: 120px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+/* Input and Textarea Focus States */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #d4af37;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+/* Input Hover States */
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: #d4af37;
+    background-color: #fff;
+}
+
+/* Placeholder Styling */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+/* Contact Form Submit Button */
+.contact-form .btn-primary {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #d4af37;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #b8941f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.contact-form .btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Remove Spinner from Number Input */
+.contact-form input[type="number"]::-webkit-inner-spin-button,
+.contact-form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contact-form input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* ============================================
+   FORM VALIDATION STATES
+   ============================================ */
+
+/* Invalid Input Styling */
+.contact-form input:invalid:not(:placeholder-shown),
+.contact-form textarea:invalid:not(:placeholder-shown) {
+    border-color: #e74c3c;
+}
+
+/* Valid Input Styling */
+.contact-form input:valid:not(:placeholder-shown),
+.contact-form textarea:valid:not(:placeholder-shown) {
+    border-color: #27ae60;
+}
+
+/* Required Field Indicator */
+.contact-form input[required] + label::after,
+.contact-form textarea[required] + label::after {
+    content: ' *';
+    color: #e74c3c;
+}
+
+/* ============================================
+   CONTACT SECTION STYLES
+   ============================================ */
+
+/* Contact Section Container */
+.contact {
+    padding: 70px 6%;
+    background: white;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+/* Contact Wrapper */
+.contact-wrapper {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Contact Form in Contact Section */
+.contact-wrapper .contact-form {
+    flex: 2;
+    min-width: 300px;
+}
+
+.contact-wrapper .contact-form input, 
+.contact-wrapper .contact-form textarea {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Contact Information Box */
+.contact-info {
+    flex: 1;
+    background: #fafafa;
+    padding: 25px;
+    border-radius: 10px;
+    min-width: 250px;
+}
+
+.contact-info h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* ============================================
+   MAP SECTION STYLES
+   ============================================ */
+
+/* Map Section Main Heading */
+.map-heading {
+    text-align: center;
+    margin: 60px 0 40px;
+    padding: 0 20px;
+}
+
+.map-heading h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Location Subheadings */
+.location-heading {
+    text-align: center;
+    margin: 40px 0 20px;
+    padding: 0 20px;
+}
+
+.location-heading h4 {
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Decorative Underline for Location Headings */
+.location-heading h4::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 2px;
+}
+
+/* Map Container */
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto 60px;
+    max-width: 1200px;
+}
+
+/* Map Iframe Styling */
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Maps */
+.map iframe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+
+/* Footer Container */
+footer {
+    background: #111;
+    color: #888;
+    padding: 30px 6%;
+    text-align: center;
+}
+
+/* Footer Content Layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Footer Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.footer-logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+/* Social Media Links */
+.socials a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.socials a:hover {
+    color: white;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - TABLET & MOBILE
+   ============================================ */
+
+/* Tablet and Mobile Navigation */
+@media (max-width: 768px) {
+    /* Hide Navigation Links */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Show Navigation When Active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Show Hamburger Menu */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hero Section Mobile Layout */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-text p {
+        margin: 0 auto 30px auto;
+    }
+
+    .hero-image img {
+        transform: rotate(0);
+        margin-top: 30px;
+    }
+
+    /* Events Section Mobile */
+    .events {
+        padding: 60px 15px;
+    }
+
+    .events-content h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .events-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 35px;
+    }
+
+    .events-list li {
+        padding: 18px 20px;
+        font-size: 1rem;
+    }
+
+    /* Enquiry Form Mobile */
+    .enquiry-section {
+        padding: 60px 15px;
+    }
+
+    .enquiry-type-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .enquiry-type-wrapper label {
+        font-size: 1rem;
+    }
+
+    .enquiry-type-wrapper select {
+        max-width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px 18px;
+        font-size: 0.95rem;
+    }
+
+    .contact-form .btn-primary {
+        width: 100%;
+        align-self: stretch;
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE ONLY
+   ============================================ */
+
+@media (max-width: 480px) {
+    /* Events Section */
+    .events {
+        padding: 40px 10px;
+    }
+
+    .events-content h2 {
+        font-size: 1.75rem;
+        margin-bottom: 25px;
+    }
+
+    .events-content h2::after {
+        width: 60px;
+        height: 3px;
+        bottom: -10px;
+    }
+
+    .events-list {
+        margin-top: 30px;
+        gap: 12px;
+    }
+
+    .events-list li {
+        padding: 15px 18px;
+        font-size: 0.95rem;
+    }
+
+    .events-list li::before {
+        font-size: 1.1rem;
+        margin-right: 10px;
+    }
+
+    .events-list li:hover {
+        transform: translateX(5px);
+    }
+
+    /* Enquiry Form */
+    .enquiry-section {
+        padding: 40px 10px;
+    }
+
+    .enquiry-type-wrapper {
+        margin-bottom: 25px;
+    }
+
+    .enquiry-type-wrapper label {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .enquiry-type-wrapper select {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+        background-position: right 12px center;
+        background-size: 18px;
+        padding-right: 40px;
+    }
+
+    .form-wrapper {
+        margin-top: 30px;
+    }
+
+    .contact-form {
+        gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+
+    .contact-form textarea {
+        min-height: 100px;
+    }
+
+    .contact-form .btn-primary {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
+
+    /* Map Section */
+    .map-heading {
+        margin: 40px 0 30px;
+    }
+
+    .map-heading h1 {
+        font-size: 1.75rem;
+    }
+
+    .location-heading {
+        margin: 30px 0 15px;
+    }
+
+    .location-heading h4 {
+        font-size: 1.1rem;
+    }
+
+    .location-heading h4::after {
+        width: 40px;
+        height: 2px;
+    }
+
+    .map iframe {
+        height: 300px;
+        border-radius: 6px;
+    }
+
+    .map {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - LARGE SCREENS
+   ============================================ */
+
+@media (min-width: 1400px) {
+    /* Map Section for Large Screens */
+    .map iframe {
+        max-width: 1000px;
+        height: 500px;
+    }
+}
